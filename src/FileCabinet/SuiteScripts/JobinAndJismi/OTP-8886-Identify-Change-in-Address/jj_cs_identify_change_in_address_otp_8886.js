@@ -16,9 +16,7 @@
  * 
  * Date Created : 30-May-2025
  * 
- * Description : This script is designed to Create a custom checkbox in Customer record,
- *               which will be checked when there is a change in existing address or adding
- *               a new address & will be unchecked when any other field value is changed.
+ * Description : This script is designed to Create a custom checkbox in Customer record, which will be checked when there is a change in existing address or adding a new address & will be unchecked when any other field value is changed.
  * 
  * REVISION HISTORY
  * 
@@ -46,7 +44,7 @@ define(['N/log'],
          * @since 2015.2
          */
 
-        let flag = 0;
+        var flag = 0;
 
         function fieldChanged(scriptContext) {
 
@@ -90,7 +88,7 @@ define(['N/log'],
 
                 } catch (e) {
 
-                    log.error('error', e.message);
+                    log.debug('error', e.message);
 
                 }
 

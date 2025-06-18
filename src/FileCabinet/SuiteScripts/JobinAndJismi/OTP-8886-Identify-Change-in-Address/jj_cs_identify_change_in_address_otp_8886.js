@@ -56,8 +56,18 @@ define(['N/log'],
 
             }
 
+        }
 
-            function addressChange(scriptContext) {
+        /**
+         * Function to evaluate if address field was changed and set custom checkbox accordingly.
+         *
+         * @param {Object} scriptContext
+         * @param {Record} scriptContext.currentRecord - Current form record
+         * @param {string} scriptContext.fieldId - Field name
+         *
+         */
+
+        function addressChange(scriptContext) {
 
                 try {
 
@@ -95,8 +105,6 @@ define(['N/log'],
                 }
 
             }
-
-        }
 
 
         return {
